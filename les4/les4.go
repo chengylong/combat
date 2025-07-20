@@ -129,7 +129,7 @@ func DBTra() {
 		log.Fatal(err)
 	}
 	// 获取私钥
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("pk")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -330,7 +330,7 @@ func DeployContract() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("pk")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -415,7 +415,7 @@ func LoadContract() {
 	// storeContract.SetItem(key)
 }
 
-// 执行合约 71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329
+// 执行合约 pk
 func RunContract() {
 	client, err := ethclient.Dial("wss://ethereum-sepolia.publicnode.com")
 	if err != nil {
@@ -427,7 +427,7 @@ func RunContract() {
 		log.Fatal(err)
 	}
 	// 获取私钥准备执行合约
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("pk")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -514,7 +514,7 @@ func RunContractByEth() {
 	}
 
 	// 获取私钥准备执行合约
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("pk")
 	if err != nil {
 		log.Fatal(err)
 	}

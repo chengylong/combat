@@ -25,7 +25,7 @@ func DeployContract() {
 	}
 
 	// 2. 加载私钥（Metamask 导出的私钥，去掉0x前缀）
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("private key")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -117,7 +117,7 @@ func RunContract() {
 		log.Fatal(err)
 	}
 	// 2. 加载私钥
-	privateKey, err := crypto.HexToECDSA("71ddf4944784d1b5d946484bc7d3c5e39a9c86f3a4b0eba706e0e2e1f8223329")
+	privateKey, err := crypto.HexToECDSA("private key")
 	if err != nil {
 		log.Fatal(err)
 	}
